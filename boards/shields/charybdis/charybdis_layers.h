@@ -10,10 +10,9 @@
 
 // Layer definitions matching the keymap
 #define BASE 0
-#define POINTER 1
-#define LOWER 2
-#define RAISE 3
-#define SYMBOLS 4
-#define SCROLL 5
-#define SNIPING 6
+#define LOWER 1
+#define RAISE 2
+#define SCROLL 3
+#define POINTER 4
+#define SNIPING 5
 
