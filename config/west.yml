@@ -4,12 +4,15 @@ manifest:
     url-base: https://github.com/zmkfirmware
   - name: badjeff
     url-base: https://github.com/badjeff
-  - name: carrefinho
-    url-base: https://github.com/carrefinho
+  # - name: carrefinho
+  #   url-base: https://github.com/carrefinho
   - name: englmaxi
     url-base: https://github.com/englmaxi
   - name: bwshockley
     url-base: https://github.com/bwshockley
+  - name: tokyo2006
+    url-base: https://github.com/tokyo2006
+    
   projects:
   - name: zmk
     remote: zmkfirmware
@@ -18,9 +21,12 @@ manifest:
   - name: zmk-pmw3610-driver
     remote: badjeff
     revision: zmk-0.3
-  - name: prospector-zmk-module
-    remote: carrefinho
-    revision: main
+  # - name: prospector-zmk-module
+  #   remote: carrefinho
+  #   revision: main
+  - name: prospector-zmk-module                 # <--- and these
+    remote: tokyo2006                          # <---
+    revision: micro_spi2  
   - name: zmk-dongle-display
     remote: englmaxi
     revision: main
