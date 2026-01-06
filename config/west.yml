@@ -29,7 +29,7 @@ manifest:
     revision: micro_spi2  
   - name: zmk-dongle-display
     remote: englmaxi
-    revision: **c6c4be11c5ede722086a2a1f355cec9c101b9390**
+    revision: c6c4be11c5ede722086a2a1f355cec9c101b9390
   - name: zmk-dongle-screen
     remote: bwshockley
     revision: main
