@@ -12,13 +12,13 @@
 &mt {
     quick-tap-ms = <200>;
     flavor = "tap-preferred";
-    tapping-term-ms = <250>;
+    tapping-term-ms = <225>;
 };
 
 &lt {
     quick-tap-ms = <200>;
     flavor = "tap-preferred";
-    tapping-term-ms = <250>;
+    tapping-term-ms = <225>;
 };
 
 // Layer definitions
