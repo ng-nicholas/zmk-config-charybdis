@@ -139,35 +139,11 @@
             label = "BASE";
             display-name = "Base";
             bindings = <
-&td_esc_pscrn   &kp N1           &kp N2                    &kp N3              &kp N4           &kp N5                 &kp N6                                            &kp N7           &kp N8               &kp N9            &kp N0                    &td_sqbrkt
-&kp TAB         &kp Q            &kp W                     &kp E               &kp R            &kp T                                             &kp Y                  &kp U            &kp I                &kp O             &kp P                     &kp BSLH
-&mt CAPS GRAVE  &hml LEFT_WIN A  &hml LEFT_ALT S           &hmls LEFT_SHIFT D  &hml LCTRL F     &hml K_CONTEXT_MENU G                             &hmr K_CONTEXT_MENU H  &hmr RCTRL J     &hmrs RIGHT_SHIFT K  &hmr RIGHT_ALT L  &hmr RIGHT_WIN SEMICOLON  &kp SQT
-&lt 5 MINUS     &lt 4 Z          &lt 3 X                   &lt 2 C             &lt 1 V          &kp B                                             &kp N                  &lt 1 M          &lt 2 COMMA          &lt 3 DOT         &lt 4 FSLH                &lt 5 EQUAL
-                &kp DELETE       &mt UP_ARROW RIGHT_ARROW  &lt 4 HOME          &td_space_enter  &lt 5 END              &mt DOWN_ARROW LEFT_ARROW                         &td_space_enter                       &kp BACKSPACE
-            >;
-        };
-
-        lower_layer {
-            label = "LOWER";
-            display-name = "Func";
-            bindings = <
-&kp F11  &kp F1    &kp F2         &kp F3          &kp F4                &kp F5  &kp F6          &kp F7                 &kp F8          &kp F9           &kp F10   &kp F12
-&trans   &kp HOME  &kp PAGE_DOWN  &kp UP_ARROW    &kp PAGE_UP           &trans          &trans  &kp PAGE_UP            &kp UP_ARROW    &kp PAGE_DOWN    &kp HOME  &trans
-&trans   &kp END   &kp LEFT       &kp DOWN_ARROW  &kp RIGHT             &trans          &trans  &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END   &trans
-&trans   &trans    &trans         &trans          &trans                &trans          &trans  &trans                 &trans          &trans           &trans    &trans
-         &trans    &trans         &trans          &kp LEFT_PARENTHESIS  &trans  &trans          &kp RIGHT_PARENTHESIS                  &trans
-            >;
-        };
-
-        raise_layer {
-            label = "RAISE";
-            display-name = "Conn";
-            bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &trans          &kp K_MUTE        &kp C_VOL_DN  &kp C_VOL_UP  &trans  &trans
-&trans  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &bt BT_CLR_ALL  &studio_unlock          &trans  &kp C_PLAY_PAUSE  &kp C_PREV    &kp C_NEXT    &trans  &trans
-&trans  &trans        &trans        &trans        &trans          &trans                  &trans  &trans            &trans        &trans        &trans  &trans
-&trans  &trans        &trans        &trans        &trans          &trans                  &trans  &trans            &trans        &trans        &trans  &trans
-        &trans        &trans        &trans        &trans          &trans          &trans          &trans                          &trans
+&td_esc_pscrn   &kp N1           &kp N2           &kp N3              &kp N4           &kp N5                 &kp N6                                &kp N7           &kp N8               &kp N9            &kp N0                    &td_sqbrkt
+&kp TAB         &kp Q            &kp W            &kp E               &kp R            &kp T                                 &kp Y                  &kp U            &kp I                &kp O             &kp P                     &kp BSLH
+&mt CAPS GRAVE  &hml LEFT_WIN A  &hml LEFT_ALT S  &hmls LEFT_SHIFT D  &hml LCTRL F     &hml K_CONTEXT_MENU G                 &hmr K_CONTEXT_MENU H  &hmr RCTRL J     &hmrs RIGHT_SHIFT K  &hmr RIGHT_ALT L  &hmr RIGHT_WIN SEMICOLON  &kp SQT
+&lt 5 MINUS     &lt 4 Z          &lt 3 X          &kp C               &lt 2 V          &lt 1 B                               &lt 1 N                &lt 2 M          &kp COMMA            &lt 3 DOT         &lt 4 FSLH                &lt 5 EQUAL
+                &kp DELETE       &kp PAGE_UP      &lt 4 HOME          &td_space_enter  &lt 5 END              &kp PAGE_DOWN                         &td_space_enter                       &kp BACKSPACE
             >;
         };
 
@@ -180,6 +156,30 @@
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans
+            >;
+        };
+
+        func_layer {
+            label = "FUNC";
+            display-name = "Func";
+            bindings = <
+&kp F11  &kp F1            &kp F2          &kp F3  &kp F4                &kp F5  &kp F6                   &kp F7                 &kp F8  &kp F9             &kp F10  &kp F12
+&trans   &trans            &trans          &trans  &trans                &trans                   &trans  &trans                 &trans  &trans             &trans   &trans
+&trans   &trans            &trans          &trans  &kp UNDERSCORE        &trans                   &trans  &kp UNDERSCORE         &trans  &trans             &trans   &trans
+&trans   &trans            &trans          &trans  &trans                &trans                   &trans  &trans                 &trans  &trans             &trans   &trans
+         &kp LEFT_BRACKET  &kp LEFT_BRACE  &trans  &kp LEFT_PARENTHESIS  &trans  &kp RIGHT_BRACE          &kp RIGHT_PARENTHESIS          &kp RIGHT_BRACKET
+            >;
+        };
+
+        arrow_layer {
+            label = "ARROW";
+            display-name = "Func";
+            bindings = <
+&trans  &trans    &trans         &trans          &trans       &trans  &trans          &trans          &trans          &trans           &trans    &trans
+&trans  &kp HOME  &kp PAGE_DOWN  &kp UP_ARROW    &kp PAGE_UP  &trans          &trans  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp HOME  &trans
+&trans  &kp END   &kp LEFT       &kp DOWN_ARROW  &kp RIGHT    &trans          &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END   &trans
+&trans  &trans    &trans         &trans          &trans       &trans          &trans  &trans          &trans          &trans           &trans    &trans
+        &trans    &trans         &trans          &trans       &trans  &trans          &trans                          &trans
             >;
         };
 
@@ -204,6 +204,18 @@
 &none   &none   &mkp RCLK  &mkp MCLK       &mkp LCLK  &none          &none  &mkp LCLK  &mkp MCLK       &mkp RCLK  &none   &none
 &trans  &trans  &none      &msc SCRL_DOWN  &none      &none          &none  &none      &msc SCRL_DOWN  &none      &trans  &trans
         &none   &none      &trans          &none      &trans  &none         &none                      &none
+            >;
+        };
+
+        hardware_layer {
+            label = "HARDWARE";
+            display-name = "HWARE";
+            bindings = <
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &trans          &kp K_MUTE        &kp C_VOL_DN  &kp C_VOL_UP  &trans  &trans
+&trans  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &bt BT_CLR_ALL  &studio_unlock          &trans  &kp C_PLAY_PAUSE  &kp C_PREV    &kp C_NEXT    &trans  &trans
+&trans  &trans        &trans        &trans        &trans          &trans                  &trans  &trans            &trans        &trans        &trans  &trans
+&trans  &trans        &trans        &trans        &trans          &trans                  &trans  &trans            &trans        &trans        &trans  &trans
+        &trans        &trans        &trans        &trans          &trans          &trans          &trans                          &trans
             >;
         };
     };
