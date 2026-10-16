@@ -111,6 +111,11 @@
         require-prior-idle-ms = <250>;
 
         // Studio Unlock Combo - all three right thumb keys
+
+        toggle_hardware {
+            bindings = <&tog 6>;
+            key-positions = <48 55>;
+        };
     };
 
     keymap {
